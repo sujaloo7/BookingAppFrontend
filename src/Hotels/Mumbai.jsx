@@ -22,7 +22,7 @@ const Mumbai = () => {
                     </div> */}
                 </div>
             </div>
-            <div className="container-fluid p-2 py-4 w-100 bg-white shadow " style={{ borderRadius: "5px", borderColor: "#f1592a" }}>
+            <div className="container-fluid  py-4 w-100 bg-white shadow " style={{ borderRadius: "5px", borderColor: "#f1592a" }}>
 
                 <Form />
             </div>

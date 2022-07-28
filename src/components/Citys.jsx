@@ -36,7 +36,7 @@ const Citys = () => {
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br>
+                                    species<br></br>
                                     <p className='mt-2' style={{ color: "#f1592a" }}>  100+ Hotels</p>
                                 </Typography>
                             </CardContent>
@@ -62,7 +62,7 @@ const Citys = () => {
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br>
+                                    species<br></br>
                                     <p className='mt-2' style={{ color: "#f1592a" }}> 50+ Hotels</p>
                                 </Typography>
                             </CardContent>
@@ -86,7 +86,7 @@ const Citys = () => {
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br>
+                                    species<br></br>
                                     <p className='mt-2' style={{ color: "#f1592a" }}> 130+ Hotels</p>
                                 </Typography>
                             </CardContent>
@@ -110,7 +110,7 @@ const Citys = () => {
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br>
+                                    species<br></br>
                                     <p className='mt-2' style={{ color: "#f1592a" }}> 100+ Hotels</p>
 
                                 </Typography>
