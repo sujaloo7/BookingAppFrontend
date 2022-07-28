@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import "./mumbai.css"
 import Form from "./Form"
 import Mumbaicontent from './Mumbaicontent';
+import Footer from "../components/Footer";
 
 const Mumbai = () => {
     return (
@@ -35,6 +36,8 @@ const Mumbai = () => {
                 <Mumbaicontent />
 
             </div>
+
+            <Footer/>
 
         </>
     )
