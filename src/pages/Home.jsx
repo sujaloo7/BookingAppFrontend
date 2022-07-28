@@ -5,6 +5,8 @@ import Covid from '../components/Covid';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Trending from '../components/Trending';
+import Faq from "../components/Faq";
+import Footer from '../components/Footer';
 
 
 
@@ -17,6 +19,8 @@ const Home = () => {
             <Cards />
             <Citys />
             <Trending />
+            <Faq />
+            <Footer/>
         </>
 
     )

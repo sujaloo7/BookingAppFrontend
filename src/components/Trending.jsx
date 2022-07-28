@@ -87,7 +87,7 @@ export default function ActionAreaCard() {
                                     species, ranging across all continents except Antarctica<br></br> */}
                                     <p style={{ color: "#f1592a" }}> Delhi Airport</p>
                                     <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3114<span className='text-muted' style={{ fontSize: "12px" }}>for day slot</span></h6><h6 className='ms-auto' style={{ color: "#f1592a" }}><span className='text-muted'>Save</span>  48%</h6>
+                                        <h6 style={{ color: "#557cef" }}>₹3114 <span className='text-muted' style={{ fontSize: "12px" }}>for day slot</span></h6><h6 className='ms-auto' style={{ color: "#f1592a" }}><span className='text-muted'>Save</span>  48%</h6>
                                     </div>
                                 </Typography>
                             </CardContent>
