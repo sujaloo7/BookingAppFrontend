@@ -10,6 +10,7 @@ import img2 from "../images/kolkata.png";
 import img3 from "../images/delhi.png";
 import img4 from "../images/bangalore.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,7 +42,9 @@ const Citys = () => {
                             </CardContent>
                             <CardActions>
                                 {/* <Button size="small">Share</Button> */}
-                                <Button size="medium" variant='contained' className='w-100' style={{ backgroundColor: "#f1592a" }}>More &nbsp;<HiArrowNarrowRight /></Button>
+                                <Link to="/mumbai" className='w-100'>
+                                    <Button size="medium" variant='contained' className='w-100' style={{ backgroundColor: "#f1592a" }}>More &nbsp;<HiArrowNarrowRight /></Button>
+                                </Link>
                             </CardActions>
                         </Card>
                     </div>
