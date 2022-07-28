@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Trending from '../components/Trending';
 import Faq from "../components/Faq";
 import Footer from '../components/Footer';
+// import BackToTop from '../components/Backtotop';
 
 
 
@@ -20,7 +21,8 @@ const Home = () => {
             <Citys />
             <Trending />
             <Faq />
-            <Footer/>
+            <Footer />
+            {/* <BackToTop/> */}
         </>
 
     )
