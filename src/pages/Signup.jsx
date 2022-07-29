@@ -11,12 +11,44 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
-
+import { useState, useEffect } from 'react';
+import { userRegister, getRoles } from '../repository/productRepository';
 
 
 
 
 const Signup = () => {
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
+  const [mobile, setMobile] = useState("")
+  const [password, setPasword] = useState("")
+  const [roleList, setRoleList] = useState([])
+
+  useEffect(() => {
+    GetRoles()
+  }, [])
+
+  const GetRoles = async () => {
+    let roleRes = await getRoles()
+    if (roleRes.status == 1) {
+      console.log(roleRes)
+      setRoleList(roleRes.data)
+    }
+  }
+
+  const submitUser = async (e) => {
+    e.preventDefault()
+    console.log(email)
+    console.log(name)
+    let res = await userRegister({ email: email, name: name, mobile: mobile, password: password })
+    if (res.status === 0) {
+      console.log("failed")
+    } else {
+      console.log("success")
+    }
+  }
+  // const [email, setEmail] = useState("")
+
   return (
     <>
       <div className="container text-center">
@@ -27,13 +59,14 @@ const Signup = () => {
             </Link>
             <h5 className='mt-3 text-bold'>Hey, sign Up Here!!!</h5>
 
-            <form className='col-sm-12'>
+            <form onSubmit={submitUser} className='col-sm-12'>
               <TextField
                 id="outlined-textarea"
                 label="Name"
                 placeholder="Enter Your Name"
                 className='mt-3 mb-3 '
                 type="text"
+                onChange={e => setName(e.target.value)}
                 // autoComplete="current-email"
                 style={{ width: "70%" }}
 
@@ -44,33 +77,46 @@ const Signup = () => {
                 placeholder="Enter Your Email"
                 className='mt-3 mb-3 '
                 type="email"
+                onChange={e => setEmail(e.target.value)}
+
                 // autoComplete="current-email"
                 style={{ width: "70%" }}
 
               />
-              <FormControl style={{width:"70%"}} className="mt-2 mb-2">
+              <FormControl style={{ width: "70%" }} className="mt-2 mb-2">
                 <InputLabel id="demo-simple-select-label">I am a</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
 
                   label="I am a"
+                  required
 
 
                 >
-                  <MenuItem value="mumbai" >User </MenuItem>
-                  <MenuItem value="Banglore">Owner</MenuItem>
+                  {
+                    roleList.map((ele, index) => {
+                      console.log("ele", ele);
+
+                      <menuItem key={index} value={ele._id} > {ele.name} </menuItem>
+
+                    })
+                  }
+
 
 
 
                 </Select>
               </FormControl>
 
+
               <TextField
                 id="outlined-password-input"
                 label="Phone Number"
                 type="number"
                 placeholder="Enter Your Number"
+                onChange={e => setMobile(e.target.value)}
+
                 // autoComplete="current-password"
                 className='mt-2 mb-4'
                 style={{ width: "70%" }}
@@ -80,6 +126,8 @@ const Signup = () => {
                 label="Password"
                 type="password"
                 placeholder="Enter Your Email"
+                onChange={e => setPasword(e.target.value)}
+
                 // autoComplete="current-password"
                 className='mt-2 mb-4'
                 style={{ width: "70%" }}
