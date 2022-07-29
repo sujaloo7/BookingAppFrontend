@@ -7,6 +7,11 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 import Tooltip from '@mui/material/Tooltip';
 import { Link } from 'react-router-dom';
 import { BiLock } from "react-icons/bi";
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import InputLabel from '@mui/material/InputLabel';
+
 
 
 
@@ -16,7 +21,7 @@ const Signup = () => {
     <>
       <div className="container text-center">
         <div className="row mt-5">
-          <div className="col-sm-4 shadow text-center ms-auto me-auto p-1" style={{ borderRadius: "10px", height: "550px" }}>
+          <div className="col-sm-4 shadow text-center ms-auto me-auto p-1" style={{ borderRadius: "10px", height: "620px" }}>
             <Link to="/login" style={{ backgroundColor: "#f1592a", paddingTop: "6px", paddingBottom: "10px", padding: "9px", borderRadius: "70%" }}>
               <AiOutlineUserAdd size={25} className="text-light" />
             </Link>
@@ -27,7 +32,7 @@ const Signup = () => {
                 id="outlined-textarea"
                 label="Name"
                 placeholder="Enter Your Name"
-                className='mt-5 mb-3 '
+                className='mt-3 mb-3 '
                 type="text"
                 // autoComplete="current-email"
                 style={{ width: "70%" }}
@@ -43,6 +48,23 @@ const Signup = () => {
                 style={{ width: "70%" }}
 
               />
+              <FormControl style={{width:"70%"}} className="mt-2 mb-2">
+                <InputLabel id="demo-simple-select-label">I am a</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+
+                  label="I am a"
+
+
+                >
+                  <MenuItem value="mumbai" >User </MenuItem>
+                  <MenuItem value="Banglore">Owner</MenuItem>
+
+
+
+                </Select>
+              </FormControl>
 
               <TextField
                 id="outlined-password-input"
