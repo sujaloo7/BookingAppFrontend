@@ -2,13 +2,17 @@ import React from 'react';
 import { AiFillStar } from "react-icons/ai";
 import { Stack, Badge } from "@chakra-ui/react";
 import { Button } from '@mui/material';
+import Filters from "./Filters";
+
 
 const Mumbaicontent = () => {
     return (
         <>
 
-            <div className="container-fluid mt-5">
-                <div className="row mt-5">
+            <div className="container-fluid ">
+            {/* <Filters /> */}
+             
+                <div className="row mb-3">
                     <div className="col-sm-8 ms-auto me-auto">
                         <div class="card mb-3 border-0 shadow">
                             <div class="row g-0">
@@ -18,15 +22,15 @@ const Mumbaicontent = () => {
                                 <div class="col-md-10">
                                     <div class="card-body">
                                         <div className='d-flex'>
-                                        <h5 class="card-title">Holiday Inn Mumbai International Airport</h5>
-                                        <h6 className='ms-auto mt-3'>₹ 2,204</h6>
+                                            <h5 class="card-title">Holiday Inn Mumbai International Airport</h5>
+                                            <h6 className='ms-auto mt-3'>₹ 2,204</h6>
 
                                         </div>
                                         <div className='d-flex'>
                                             <p class="card-text" style={{ fontSize: "12px" }}>Andheri East</p>
-                                            
-                                        <h6 className='ms-auto '><del>₹ 7,500</del></h6>
-                                            
+
+                                            <h6 className='ms-auto '><del>₹ 7,500</del></h6>
+
 
 
                                         </div>

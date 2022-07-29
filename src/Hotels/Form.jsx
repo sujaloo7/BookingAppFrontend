@@ -8,6 +8,8 @@ import Select from '@mui/material/Select';
 import { Button } from '@mui/material';
 import { GoLocation } from "react-icons/go";
 import { FaSearch } from "react-icons/fa";
+import Filters from "./Filters";
+
 
 
 
@@ -15,7 +17,7 @@ export default function FormPropsTextFields() {
     return (
 
         <>
-            <div className="container">
+            <div className="container  ">
                 {/* <p className='ms-5'>Find Hourly Hotels</p> */}
 
                 <Box
@@ -73,13 +75,14 @@ export default function FormPropsTextFields() {
                                 shrink: true,
                             }}
                         />
-                        <Button variant='contained  ' className='mt-2 p-3 text-light' style={{ backgroundColor: "#f1592a" }} ><FaSearch/>&nbsp;FIND HOURLY HOTELS</Button>
+                        <Button variant='contained  ' className='mt-2 p-3 text-light' style={{ backgroundColor: "#f1592a" }} ><FaSearch />&nbsp;FIND HOURLY HOTELS</Button>
                         &nbsp;
                         <Button variant='contained  ' type='reset' className='mt-2 p-3 text-light' style={{ backgroundColor: "#f1592a" }} >Reset</Button>
 
                     </div>
                 </Box>
             </div>
+
         </>
     );
 }

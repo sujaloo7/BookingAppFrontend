@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const Covid = () => {
     return (
         <>
-            <div className="container mt-5 p-4" id='getstarted'>
+            <div className="container mt-5 " id='getstarted'>
                 <div className="row">
 
                     <h5 className='ms-5'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}>100% SAFE TO STAY</span><br></br>COVID-19 Safety Precautions</h5>
