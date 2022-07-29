@@ -3,15 +3,15 @@ import { AiFillStar } from "react-icons/ai";
 import { Stack, Badge } from "@chakra-ui/react";
 import { Button } from '@mui/material';
 import Filters from "./Filters";
-
+import { Link } from 'react-router-dom';
 
 const Mumbaicontent = () => {
     return (
         <>
 
             <div className="container-fluid ">
-            {/* <Filters /> */}
-             
+                {/* <Filters /> */}
+
                 <div className="row mb-3">
                     <div className="col-sm-8 ms-auto me-auto">
                         <div class="card mb-3 border-0 shadow">
@@ -38,7 +38,7 @@ const Mumbaicontent = () => {
                                         <p class="card-text d-flex"><small class="text-muted"><AiFillStar style={{ color: "#f1592a" }} /><AiFillStar style={{ color: "#f1592a" }} /><AiFillStar style={{ color: "#f1592a" }} /><AiFillStar style={{ color: "#f1592a" }} /><AiFillStar style={{ color: "#f1592a" }} />&nbsp;<span class="badge  text-bg-light p-2 border-dark">Accepts Local ID</span>&nbsp;
                                             <span class="badge  text-bg-light p-2">Couple Friendly</span>
                                         </small>
-                                            <Button className='ms-auto text-light px-5' style={{ backgroundColor: "#f1592a" }}>BOOK</Button></p>
+                                            <Link className='text-light ms-auto' to="/details"> <Button className='ms-auto text-light px-5' style={{ backgroundColor: "#f1592a" }}>BOOK</Button></Link></p>
 
 
 

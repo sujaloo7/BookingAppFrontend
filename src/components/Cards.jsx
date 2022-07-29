@@ -13,10 +13,10 @@ const Cards = () => {
                 <div className="row">
                     <div class="card mb-3 col-sm-3 border-0" >
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src={card1} class="img-fluid rounded-start ms-3" alt="..." />
+                            <div class="col-md-4 text-center">
+                                <img src={card1} class="img-fluid rounded-start " alt="..." />
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">SLOT PRICING</h5>
                                     <p class="card-text" style={{ fontSize: "13px", color: "gray" }}>Who pays for the unused room?</p>
@@ -27,10 +27,10 @@ const Cards = () => {
                     </div>
                     <div class="card mb-3 col-sm-3 border-0" >
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src={card2} class="img-fluid rounded-start ms-4" alt="..." />
+                            <div class="col-md-4 text-center">
+                                <img src={card2} class="img-fluid rounded-start " alt="..." />
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">BEST HOTELS</h5>
                                     <p class="card-text" style={{ fontSize: "13px", color: "gray" }}>Our average rating on TripAdvisor is 4+</p>
@@ -41,10 +41,10 @@ const Cards = () => {
                     </div>
                     <div class="card mb-3 col-sm-3 border-0" >
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src={card3} class="img-fluid rounded-start ms-4" alt="..." />
+                            <div class="col-md-4 text-center">
+                                <img src={card3} class="img-fluid rounded-start " alt="..." />
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">FLEXIBLE STAY</h5>
                                     <p class="card-text" style={{ fontSize: "13px", color: "gray" }}>Check-in & Check-out of our hotels at your convenience</p>
@@ -55,10 +55,10 @@ const Cards = () => {
                     </div>
                     <div class="card mb-3 col-sm-3 border-0" >
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src={card4} class="img-fluid rounded-start ms-4" alt="..." />
+                            <div class="col-md-4 text-center">
+                                <img src={card4} class="img-fluid rounded-start " alt="..." />
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">PAY AT HOTEL</h5>
                                     <p class="card-text" style={{ fontSize: "13px", color: "gray" }}>Reserve your stay with a small amount and pay remaining at the hotel</p>

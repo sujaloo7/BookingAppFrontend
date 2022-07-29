@@ -8,8 +8,8 @@ const Covid = () => {
             <div className="container mt-5 " id='getstarted'>
                 <div className="row">
 
-                    <h5 className='ms-5'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}>100% SAFE TO STAY</span><br></br>COVID-19 Safety Precautions</h5>
-                    <p className='ms-5' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
+                    <h4 className=' text-center'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}>100% SAFE TO STAY</span><br></br>COVID-19 Safety Precautions</h4>
+                    <p className=' text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
                     <div className='col-sm-4'>
                         <img src={covid} alt="" height={360} />
 

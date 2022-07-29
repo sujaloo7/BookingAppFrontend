@@ -12,8 +12,8 @@ export default function ActionAreaCard() {
 
 
         <div className="container mb-5 pt-5">
-            <h5 className='ms-3'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}> HOTELS NEAR YOU</span><br></br>Budget to luxury, we’ve got you 900+ hotels</h5>
-            <p className='ms-3' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
+            <h4 className='text-center'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}> HOTELS NEAR YOU</span><br></br>Budget to luxury, we’ve got you 900+ hotels</h4>
+            <p className='text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
             <div className="row mt-4 p-3">
                 <div className="col-sm-4">
 

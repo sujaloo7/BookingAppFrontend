@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Mumbai from './Hotels/Mumbai';
+import Details from './pages/Details';
 // import { Authcontextprovider } from './context/Authcontext';
 
 
@@ -24,10 +25,7 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/mumbai' element={<Mumbai />} />
-
-
-
-
+          <Route path='/details' element={<Details />} />
         </Routes>
       </BrowserRouter>
 

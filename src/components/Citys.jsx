@@ -18,8 +18,8 @@ const Citys = () => {
     return (
         <>
             <div className="container mb-5">
-                <h5 className='ms-3'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}>WE’RE REVOLUTIONIZING TRAVEL</span><br></br>We're live in 90+ cities</h5>
-                <p className='ms-3' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
+                <h4 className=' text-center'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}>WE’RE REVOLUTIONIZING TRAVEL</span><br></br>We're live in 90+ cities</h4>
+                <p className=' text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
                 <div className="row mt-4 p-3">
 
                     <div className="col-sm-3 pt-2 ">
