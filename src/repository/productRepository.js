@@ -18,5 +18,14 @@ export function getRoles(payload) {
     } catch (error) { }
   })
 }
+export function userLogin(payload) {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await Repository.post(`${baseUrl}/user_login`, payload)
+
+      return resolve(response.data)
+    } catch (error) { }
+  })
+}
 
 

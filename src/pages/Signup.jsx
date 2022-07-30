@@ -47,6 +47,11 @@ const Signup = () => {
       console.log("success")
     }
   }
+
+  const getValue = (e) => {
+    console.log("e", e.target.value)
+
+  }
   // const [email, setEmail] = useState("")
 
   return (
@@ -84,32 +89,23 @@ const Signup = () => {
 
               />
               <FormControl style={{ width: "70%" }} className="mt-2 mb-2">
-                <InputLabel id="demo-simple-select-label">I am a</InputLabel>
+                <InputLabel id="demo-simple-select-label">I'm a</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
 
-                  label="I am a"
+                  label="I'm a"
                   required
-
-
+                  onChange={getValue}
                 >
                   {
                     roleList.map((ele, index) => {
-                      console.log("ele", ele);
-
-                      <menuItem key={index} value={ele._id} > {ele.name} </menuItem>
+                      return <MenuItem key={index} value={ele._id}>{ele.name} </MenuItem>
 
                     })
                   }
-
-
-
-
                 </Select>
               </FormControl>
-
-
               <TextField
                 id="outlined-password-input"
                 label="Phone Number"
@@ -152,14 +148,7 @@ const Signup = () => {
 
                 <Button variant='outlined' type='submit' size='large' className='p-2 mt-4 mb-3' style={{ Color: "#f1592a !important", width: "70%", fontSize: "15px !important" }}><FcGoogle size={25} />&nbsp;&nbsp;Continue With Google</Button>
               </Tooltip> */}
-
-
-
-
-
             </form>
-
-
           </div>
         </div>
       </div>

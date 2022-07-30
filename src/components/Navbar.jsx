@@ -3,6 +3,8 @@ import logo from "../images/roomrentjaipur.webp";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import "./navbar.css";
+import { userLogin } from '../repository/productRepository';
+
 
 const Navbar = () => {
     return (
@@ -58,9 +60,23 @@ const Navbar = () => {
                                 </li> */}
 
                             </ul>
-                            <Link to="/login" className='text-decoration-none'>
-                                <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>
-                            </Link>
+
+                            {userLogin?.email ? (
+                                <div>
+
+
+                                    <Link to="/account">
+                                        <button className='btn btn text-light '></button>
+                                    </Link>
+                                    <Link to="/login">
+                                        <button style={{ fontSize: "12px" }} className=' btn btn text-light'>LogOut</button>
+                                    </Link>
+                                </div>
+                            ) : (
+                                <Link to="/login" className='text-decoration-none'>
+                                    <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>
+                                </Link>
+                            )}
 
                         </div>
                     </div>

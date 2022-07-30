@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiLock } from "react-icons/bi";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./login.css";
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
@@ -11,20 +11,41 @@ import Tooltip from '@mui/material/Tooltip';
 import { UserAuth } from '../context/Authcontext';
 import { BsArrowLeft } from "react-icons/bs";
 // import { async } from '@firebase/util';
+import { userLogin } from '../repository/productRepository';
+import { useState } from 'react';
 
 const Login = () => {
 
-    const googleSignIn = UserAuth();
+    const [email, setEmail] = useState("")
+    const [password, setPasword] = useState("")
+    const [error, setError] = useState('')
+    const navigate = useNavigate()
 
-    const handleGoogleSignIn = async () => {
+
+    const loginUser = async (e) => {
+        e.preventDefault()
+        setError('')
         try {
-            await googleSignIn();
+            await userLogin({ email: email, password: password })
+            navigate('/')
         }
         catch (error) {
-            console.log(error);
+            console.log(error)
+            setError(error.message)
         }
+    }
 
-    };
+    // const googleSignIn = UserAuth();
+
+    // const handleGoogleSignIn = async () => {
+    //     try {
+    //         await googleSignIn();
+    //     }
+    //     catch (error) {
+    //         console.log(error);
+    //     }
+
+    // };
     return (
         <>
             <div className="container text-center">
@@ -35,7 +56,7 @@ const Login = () => {
                         </Link>
                         <h5 className='mt-3 text-bold'>Hey, welcome back !!!</h5>
 
-                        <form className='col-sm-12'>
+                        <form className='col-sm-12' onSubmit={loginUser}>
                             <TextField
                                 id="outlined-textarea"
                                 label="Email"
@@ -44,6 +65,7 @@ const Login = () => {
                                 type="email"
                                 // autoComplete="current-email"
                                 style={{ width: "70%" }}
+                                onChange={e => setEmail(e.target.value)}
 
                             />
                             <TextField
@@ -54,6 +76,7 @@ const Login = () => {
                                 // autoComplete="current-password"
                                 className='mt-3 mb-4'
                                 style={{ width: "70%" }}
+                                onChange={e => setPasword(e.target.value)}
                             />
 
                             <div className='col-sm-12'>
@@ -78,14 +101,14 @@ const Login = () => {
 
 
 
-
+                            {error ? <p className='p-2 bg-danger text-light my-2 mt-3'>{error}</p> : null}
 
                         </form>
-                        <Tooltip title="Login With Google" placement="bottom-end">
 
 
-                            <Button variant='outlined' onClick={handleGoogleSignIn} size='large' className='p-2 mt-4 mb-3' style={{ Color: "#f1592a !important", width: "70%", fontSize: "15px !important" }}><FcGoogle size={25} />&nbsp;&nbsp;Continue With Google</Button>
-                        </Tooltip>
+
+                        <Button variant='outlined' size='large' className='p-2 mt-4 mb-3' style={{ Color: "#f1592a !important", width: "70%", fontSize: "15px !important" }}><FcGoogle size={25} />&nbsp;&nbsp;Continue With Google</Button>
+
 
 
                     </div>
