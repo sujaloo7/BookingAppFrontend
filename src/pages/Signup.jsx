@@ -42,7 +42,7 @@ const Signup = () => {
     console.log(name)
     let res = await userRegister({ email: email, name: name, mobile: mobile, password: password })
     if (res.status === 0) {
-      console.log("failed")
+      console.log("failed") 
     } else {
       console.log("success")
     }

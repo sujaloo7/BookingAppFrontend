@@ -34,7 +34,6 @@ const Login = () => {
             setError(error.message)
         }
     }
-
     // const googleSignIn = UserAuth();
 
     // const handleGoogleSignIn = async () => {
@@ -44,13 +43,12 @@ const Login = () => {
     //     catch (error) {
     //         console.log(error);
     //     }
-
     // };
     return (
         <>
             <div className="container text-center">
                 <div className="row mt-5">
-                    <div className="col-sm-4 shadow text-center ms-auto me-auto p-1 bg-light" style={{ borderRadius: "10px", height: "530px" }}>
+                    <div className="col-sm-4 shadow text-center ms-auto me-auto  bg-light" style={{ borderRadius: "10px", height: "530px" }}>
                         <Link to="/login" style={{ backgroundColor: "#f1592a", paddingTop: "6px", paddingBottom: "10px", padding: "9px", borderRadius: "70%" }}>
                             <BiLock size={25} className="text-light" />
                         </Link>

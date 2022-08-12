@@ -61,8 +61,10 @@ const Navbar = () => {
 
                             </ul>
 
-                            {userLogin?.email ? (
+                            {userLogin.email ?
+
                                 <div>
+
 
 
                                     <Link to="/account">
@@ -72,11 +74,17 @@ const Navbar = () => {
                                         <button style={{ fontSize: "12px" }} className=' btn btn text-light'>LogOut</button>
                                     </Link>
                                 </div>
-                            ) : (
-                                <Link to="/login" className='text-decoration-none'>
-                                    <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>
-                                </Link>
-                            )}
+                                :
+                                <div>
+                                    <Link to="/account">
+                                        <button className='btn btn text-light '>k</button>
+                                    </Link>
+
+                                    <Link to="/login" className='text-decoration-none'>
+                                        <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>
+                                    </Link>
+                                </div>
+                            }
 
                         </div>
                     </div>
