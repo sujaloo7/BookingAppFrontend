@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../images/roomrentjaipur.webp";
+import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import "./navbar.css";
@@ -9,10 +9,10 @@ import { userLogin } from '../repository/productRepository';
 const Navbar = () => {
     return (
         <>
-            <div className="container p-3  " style={{ position: "relative" }}>
-                <nav className="navbar  navbar-expand-lg bg-light shadow-lg py-3 sticky-top">
+            <div className="container p-3  " style={{ position: "relative", borderRadius: "7px" }}>
+                <nav className="navbar  navbar-expand-lg bg-light shadow-lg py-3 sticky-top" style={{ borderRadius: "7px" }}>
                     <div className="container-fluid">
-                        <Link to="/" className="navbar-brand" > <img src={logo} alt="" /> </Link>
+                        <Link to="/" className="navbar-brand" > <img src={logo} alt="" height={45} /> </Link>
                         <Button classNameName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             {/* <span className="navbar-toggler-icon"></span> */}
                         </Button>

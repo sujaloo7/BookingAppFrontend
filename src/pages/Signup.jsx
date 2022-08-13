@@ -22,6 +22,7 @@ const Signup = () => {
   const [name, setName] = useState("")
   const [mobile, setMobile] = useState("")
   const [password, setPasword] = useState("")
+  const [roleId, setRoleId] = useState("")
   const [roleList, setRoleList] = useState([])
 
   useEffect(() => {
@@ -40,16 +41,17 @@ const Signup = () => {
     e.preventDefault()
     console.log(email)
     console.log(name)
-    let res = await userRegister({ email: email, name: name, mobile: mobile, password: password })
+    let res = await userRegister({ email: email, name: name, mobile: mobile, role_id: roleId, password: password })
     if (res.status === 0) {
-      console.log("failed") 
+      console.log("failed")
     } else {
       console.log("success")
     }
   }
 
   const getValue = (e) => {
-    console.log("e", e.target.value)
+
+    setRoleId(e.target.value)
 
   }
   // const [email, setEmail] = useState("")
@@ -71,7 +73,10 @@ const Signup = () => {
                 placeholder="Enter Your Name"
                 className='mt-3 mb-3 '
                 type="text"
-                onChange={e => setName(e.target.value)}
+                onChange={e => {
+                  setName(e.target.value)
+                  console.log(e.target.value)
+                }}
                 // autoComplete="current-email"
                 style={{ width: "70%" }}
 

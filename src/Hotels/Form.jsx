@@ -8,7 +8,7 @@ import Select from '@mui/material/Select';
 import { Button } from '@mui/material';
 import { GoLocation } from "react-icons/go";
 import { FaSearch } from "react-icons/fa";
-import Filters from "./Filters";
+// import Filters from "./Filters";
 
 
 
@@ -17,7 +17,7 @@ export default function FormPropsTextFields() {
     return (
 
         <>
-            <div className="container  ">
+            <div className="container sticky-top">
                 {/* <p className='ms-5'>Find Hourly Hotels</p> */}
 
                 <Box
