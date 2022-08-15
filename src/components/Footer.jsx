@@ -1,8 +1,9 @@
 import React from 'react';
 import "./footer.css";
-import logo from "../images/roomrentjaipur.webp";
+import logo from "../images/footer-logo.PNG";
 import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
+
 
 const Footer = () => {
     return (
