@@ -36,14 +36,15 @@ const Profile = () => {
                     </div>
                     <div className='col-md-6'>
                         <h4>My Account</h4>
-                        <form action="">
-                            <div className='mb-4'>
+                        <form action="" className='p-3'>
+                            <div className='mb-4 '>
                                 <TextField id="outlined-basic" 
                                 label="First Name"
                                  variant="outlined"
                                  InputLabelProps={{
                                     shrink: true,
-                                }} />
+                                }} 
+                                className="w-75"/>
                             </div>
                             <div className='mb-4'>
                                 <TextField id="outlined-basic"
@@ -51,7 +52,8 @@ const Profile = () => {
                                   variant="outlined"
                                   InputLabelProps={{
                                     shrink: true,
-                                }} />
+                                }} 
+                                className="w-75"/>
                             </div>
                             <div className='mb-4'>
                                 <TextField id="outlined-basic" 
@@ -59,10 +61,11 @@ const Profile = () => {
                                  variant="outlined"
                                  InputLabelProps={{
                                     shrink: true,
-                                }} />
+                                }} 
+                                className="w-75"/>
                             </div>
                             <div className='mb-4'>
-                            <FormControl sx={{  minWidth: 225 }}>
+                            <FormControl sx={{  minWidth: 476 }}>
                             <InputLabel id="demo-simple-select-label">I'm a</InputLabel>
                             <Select
                                 labelId="demo-simple-select-label"
@@ -71,8 +74,8 @@ const Profile = () => {
                                 label="I'm a"
 
                             >
-                                <MenuItem value="mumbai" >  </MenuItem>
-                                <MenuItem value="Banglore"> Banglore </MenuItem>
+                                <MenuItem value="mumbai" > User </MenuItem>
+                                <MenuItem value="Banglore"> Owner </MenuItem>
                                
 
 
