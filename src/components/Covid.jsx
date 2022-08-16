@@ -16,7 +16,7 @@ const Covid = () => {
                     </div>
                     <div className="col-sm-6 mt-5">
                         <div className="row">
-                            <div className="card col-sm-6 border-0 p-2" >
+                            <div className="card col-sm-6 border-0 shadow-0 p-2" >
                                 <div className="card-body">
                                     {/* <h5 className="card-title">Card title</h5> */}
                                     <h6 className="card-subtitle mb-2 text-muted">Social Distancing&nbsp;<HiArrowNarrowRight style={{ color: "#557cef" }} /></h6>
@@ -24,7 +24,7 @@ const Covid = () => {
 
                                 </div>
                             </div>
-                            <div className="card col-sm-6 border-0 p-2" >
+                            <div className="card col-sm-6 border-0 shadow-0 p-2" >
                                 <div className="card-body">
                                     {/* <h5 className="card-title">Car</h5> */}
                                     <h6 className="card-subtitle mb-2 text-muted">Daily Temperature Check&nbsp;<HiArrowNarrowRight style={{ color: "#557cef" }} /></h6>
@@ -34,7 +34,7 @@ const Covid = () => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="card col-sm-6 border-0 p-2" >
+                            <div className="card col-sm-6 border-0 shadow-0 p-2" >
                                 <div className="card-body">
                                     {/* <h5 className="card-title">Card title</h5> */}
                                     <h6 className="card-subtitle mb-2 text-muted">Sanitization&nbsp;<HiArrowNarrowRight style={{ color: "#557cef" }} /></h6>
@@ -42,7 +42,7 @@ const Covid = () => {
 
                                 </div>
                             </div>
-                            <div className="card col-sm-6 border-0 p-2" >
+                            <div className="card col-sm-6 border-0 shadow-0 p-2" >
                                 <div className="card-body">
                                     {/* <h5 className="card-title">Car</h5> */}
                                     <h6 className="card-subtitle mb-2 text-muted" style={{}}>Masks & Gloves&nbsp;<HiArrowNarrowRight style={{ color: "#557cef" }} /></h6>

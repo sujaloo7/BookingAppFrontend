@@ -76,9 +76,7 @@ const Navbar = () => {
                                 </div>
                                 :
                                 <div>
-                                    <Link to="/account">
-                                        <button className='btn btn text-light '>k</button>
-                                    </Link>
+
 
                                     <Link to="/login" className='text-decoration-none'>
                                         <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>

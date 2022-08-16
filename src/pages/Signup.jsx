@@ -103,12 +103,11 @@ const Signup = () => {
                   required
                   onChange={getValue}
                 >
-                  {
-                    roleList.map((ele, index) => {
-                      return <MenuItem key={index} value={ele._id}>{ele.name} </MenuItem>
+                 
+                       <MenuItem  value="User">User </MenuItem>
+                       <MenuItem  value="User">Owner </MenuItem>
 
-                    })
-                  }
+
                 </Select>
               </FormControl>
               <TextField

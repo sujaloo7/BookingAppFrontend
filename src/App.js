@@ -10,6 +10,10 @@ import Signup from './pages/Signup';
 import Mumbai from './Hotels/Mumbai';
 import Details from './pages/Details';
 import Profile from './pages/Profile';
+import Properties from './pages/Properties';
+import Changenumber from './pages/Changenumber';
+import Response from './pages/Response';
+
 // import { Authcontextprovider } from './context/Authcontext';
 
 
@@ -28,6 +32,12 @@ function App() {
           <Route path='/mumbai' element={<Mumbai />} />
           <Route path='/details' element={<Details />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/properties' element={<Properties />} />
+          <Route path='/changenumber' element={<Changenumber />} />
+          <Route path='/response' element={<Response />} />
+
+
+
 
         </Routes>
       </BrowserRouter>

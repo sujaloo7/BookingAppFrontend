@@ -11,7 +11,7 @@ const Cards = () => {
 
             <div className="container mt-5 p-5  ">
                 <div className="row">
-                    <div class="card mb-3 col-sm-3 border-0" >
+                    <div class="card mb-3 col-sm-3 border-0 shadow-0" >
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
                                 <img src={card1} class="img-fluid rounded-start " alt="..." />
@@ -25,7 +25,7 @@ const Cards = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3 col-sm-3 border-0" >
+                    <div class="card mb-3 col-sm-3 border-0 shadow-0" >
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
                                 <img src={card2} class="img-fluid rounded-start " alt="..." />
@@ -39,7 +39,7 @@ const Cards = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3 col-sm-3 border-0" >
+                    <div class="card mb-3 col-sm-3 border-0 shadow-0" >
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
                                 <img src={card3} class="img-fluid rounded-start " alt="..." />
@@ -53,7 +53,7 @@ const Cards = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3 col-sm-3 border-0" >
+                    <div class="card mb-3 col-sm-3 border-0 shadow-0" >
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
                                 <img src={card4} class="img-fluid rounded-start " alt="..." />
