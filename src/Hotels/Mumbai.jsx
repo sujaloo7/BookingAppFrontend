@@ -6,6 +6,7 @@ import Form from "./Form"
 import Mumbaicontent from './Mumbaicontent';
 import Footer from "../components/Footer";
 import Filters from './Filters';
+import "../repository/Location";
 
 
 const Mumbai = () => {
@@ -22,22 +23,22 @@ const Mumbai = () => {
 
                         <Form />
                     </div> */}
-                    <h1 className='text-center mt-5' style={{ fontWeight: "700", fontSize: "2.5rem", color: "#fff", textShadow: "0 2px 10px rgb(0 0 0 / 30%)" }}>India’s Largest Hourly Hotels</h1>
-                    <p className='text-center' style={{ fontSize: "1.1rem", color: "#fff", textShadow: "0 2px 10px rgb(0 0 0 / 30%)" }}>Say goodbye to 12 noon check-ins!</p>
+                    <h1 className='text-center mt-5' style={{ fontWeight: "700", fontSize: "2.5rem", color: "#fff", textShadow: "0 2px 10px rgb(0 0 0 / 30%)" }}>Find Your Dream House</h1>
+
                 </div>
             </div>
             <div className="container-fluid  py-4 w-100 bg-white shadow " style={{ borderRadius: "5px", borderColor: "#f1592a" }}>
 
                 <Form />
-                
+
             </div>
             <br></br>
-            
+
 
 
             {/* Content Section */}
             <div className=''>
-              <Filters/>
+                <Filters />
 
                 <Mumbaicontent />
                 <Mumbaicontent />

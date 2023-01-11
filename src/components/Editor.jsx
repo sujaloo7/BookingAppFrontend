@@ -28,6 +28,7 @@ class Editor extends Component {
                         console.log('Focus.', editor);
                     }}
                 />
+                
             </div>
         );
     }

@@ -14,6 +14,8 @@ import Dropzone from '../components/Dropzone';
 import { Checkbox, FormControlLabel } from '@mui/material';
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Footer from '../components/Footer';
+import { Addproperty, Getproperty } from "../repository/Location";
+
 
 
 
@@ -167,7 +169,58 @@ const Properties = () => {
                 <div className="row p-4">
 
                     <div className='col-md-4'>
-                        <TextField id="filled-basic" className='w-75' label="Street Address" variant="filled" helperText=" House/Apartment Number" />
+                        <TextField id="filled-basic" className='w-75 mb-4' label="Street Address" variant="filled" helperText=" House/Apartment Number" />
+
+                    </div>
+                    <div className='col-md-4'>
+                        {/* <TextField id="filled-basic" className='w-75' label="I Want To" variant="filled" />  */}
+                        <FormControl className='w-75'>
+                            <InputLabel id="demo-simple-select-label">Select State</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                variant="filled"
+                                label="I'm a"
+                                required
+
+                            >
+                                <MenuItem value="1" > Bapunagar</MenuItem>
+                                <MenuItem value="2"> Rambag </MenuItem>
+                                <MenuItem value="3"> Tonk Road </MenuItem>
+
+
+
+
+
+                            </Select>
+                        </FormControl>
+                    </div>
+                    <div className='col-md-4'>
+                        {/* <TextField id="filled-basic" className='w-75' label="I Want To" variant="filled" />  */}
+                        <FormControl className='w-75'>
+                            <InputLabel id="demo-simple-select-label">Select City</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                variant="filled"
+                                label="I'm a"
+                                required
+
+                            >
+                                <MenuItem value="1" > Bapunagar</MenuItem>
+                                <MenuItem value="2"> Rambag </MenuItem>
+                                <MenuItem value="3"> Tonk Road </MenuItem>
+
+
+
+
+
+                            </Select>
+                        </FormControl>
+                    </div>
+                    <div className='col-md-4'>
+                        {/* <TextField id="filled-basic" className='w-75' label="I Want To" variant="filled" />  */}
+                        <TextField id="filled-basic" className='w-75' label="Pincode" variant="filled" helperText=" House/Apartment Number" />
 
                     </div>
                     <div className='col-md-4'>
@@ -193,28 +246,7 @@ const Properties = () => {
                             </Select>
                         </FormControl>
                     </div>
-                    <div className='col-md-4'>
-                        {/* <TextField id="filled-basic" className='w-75' label="I Want To" variant="filled" />  */}
-                        <FormControl className='w-75'>
-                            <InputLabel id="demo-simple-select-label">Nearby Road</InputLabel>
-                            <Select
-                                labelId="demo-simple-select-label"
-                                id="demo-simple-select"
-                                variant="filled"
-                                label="I'm a"
-                                required
 
-                            >
-
-
-                                <MenuItem value="1" > Bapunagar</MenuItem>
-                                <MenuItem value="2"> Rambag </MenuItem>
-                                <MenuItem value="3"> Tonk Road </MenuItem>
-
-
-                            </Select>
-                        </FormControl>
-                    </div>
 
                 </div>
 
@@ -363,7 +395,7 @@ const Properties = () => {
 
 
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

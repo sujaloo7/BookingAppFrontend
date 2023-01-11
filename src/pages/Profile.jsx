@@ -12,7 +12,12 @@ import { Button } from '@mui/material';
 
 
 
+
+
+
 const Profile = () => {
+
+
     return (
         <>
             <Navbar />
@@ -99,7 +104,7 @@ const Profile = () => {
                     <div className="col-md-3"></div>
                 </div>
             </div>
-        </>     
+        </>
     )
 }
 

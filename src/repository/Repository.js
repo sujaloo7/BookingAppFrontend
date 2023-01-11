@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseDomain = "http://97f2-122-160-30-226.ngrok.io/api"
+const baseDomain = "http://7f2f-122-160-30-226.ngrok.io/api"
 const imageDomain = "http://f930-122-160-30-226.ngrok.io/"
 
 export const customHeaders = {

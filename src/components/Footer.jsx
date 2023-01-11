@@ -1,6 +1,6 @@
 import React from 'react';
 import "./footer.css";
-import logo from "../images/footer-logo.PNG";
+import logo from "../images/logo.png";
 import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
 

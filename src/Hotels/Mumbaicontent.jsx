@@ -4,6 +4,8 @@ import { Stack, Badge } from "@chakra-ui/react";
 import { Button } from '@mui/material';
 import Filters from "./Filters";
 import { Link } from 'react-router-dom';
+import "../repository/Location";
+
 
 const Mumbaicontent = () => {
     return (

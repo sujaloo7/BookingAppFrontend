@@ -12,7 +12,7 @@ export default function ActionAreaCard() {
 
 
         <div className="container mb-5 pt-5">
-            <h4 className='text-center'><span className='' style={{ fontSize: "14px", color: "#f1592a" }}> HOTELS NEAR YOU</span><br></br>Budget to luxury, we’ve got you 900+ hotels</h4>
+            <h4 className='text-center'><span className='' style={{ fontSize: "14px", color: "#ffa458" }}> PROPERTIES NEAR YOU</span><br></br>Budget to luxury, we’ve got you Properties</h4>
             <p className='text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
             <div className="row mt-4 p-3">
                 <div className="col-sm-4">
@@ -27,14 +27,14 @@ export default function ActionAreaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Park Kolkata <span className='ms-auto'>5 <BsFillStarFill className='mb-2' /></span></div>
+                                    <div className='d-flex'>  Park Kolkata</div>
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     {/* Lizards are a widespread group of squamate reptiles, with over 6,000
                                     species, ranging across all continents except Antarctica<br></br> */}
                                     <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
                                     <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3540 <span className='text-muted' style={{ fontSize: "12px" }}>for day slot</span></h6><h6 className='ms-auto' style={{ color: "#f1592a" }}><span className='text-muted'>Save</span>  50%</h6>
+                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
                                     </div>
                                 </Typography>
                             </CardContent>
@@ -48,26 +48,25 @@ export default function ActionAreaCard() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/red-fox.png"
+                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
                                 alt="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Hablis Hotel <span className='ms-auto'>5 <BsFillStarFill className='mb-2' /></span></div>
+                                    <div className='d-flex'>  Park Kolkata</div>
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Guindy, Chennai</p>
+                species, ranging across all continents except Antarctica<br></br> */}
+                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
                                     <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹5900 <span className='text-muted' style={{ fontSize: "12px" }}>for day slot</span></h6><h6 className='ms-auto' style={{ color: "#f1592a" }}><span className='text-muted'>Save</span>  34%</h6>
+                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
                                     </div>
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                     </Card>
                 </div>
-
                 <div className="col-sm-4">
 
                     <Card className='pt-2 border-0 shadow'>
@@ -75,25 +74,52 @@ export default function ActionAreaCard() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/hablis.png"
+                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
                                 alt="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'> Red Fox Hotel <span className='ms-auto'>3 <BsFillStarFill className='mb-2' /></span></div>
+                                    <div className='d-flex'>  Park Kolkata</div>
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Delhi Airport</p>
+                species, ranging across all continents except Antarctica<br></br> */}
+                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
                                     <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3114 <span className='text-muted' style={{ fontSize: "12px" }}>for day slot</span></h6><h6 className='ms-auto' style={{ color: "#f1592a" }}><span className='text-muted'>Save</span>  48%</h6>
+                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
                                     </div>
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                     </Card>
                 </div>
+                <div className="col-sm-4 mt-3">
+
+                    <Card className='pt-2 border-0 shadow'>
+                        <CardActionArea>
+                            <CardMedia
+                                component="img"
+                                height="140"
+                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
+                                alt="green iguana"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h6" component="div">
+                                    <div className='d-flex'>  Park Kolkata</div>
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    {/* Lizards are a widespread group of squamate reptiles, with over 6,000
+                species, ranging across all continents except Antarctica<br></br> */}
+                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
+                                    <div className='d-flex'>
+                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
+                                    </div>
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                </div>
+
 
             </div>
         </div>

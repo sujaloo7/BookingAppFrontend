@@ -14,6 +14,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import { userLogin } from '../repository/productRepository';
 import { useState } from 'react';
 
+
 const Login = () => {
 
     const [email, setEmail] = useState("")
@@ -27,7 +28,7 @@ const Login = () => {
         setError('')
         try {
             await userLogin({ email: email, password: password })
-            navigate('/')
+            navigate('/profile')
         }
         catch (error) {
             console.log(error)

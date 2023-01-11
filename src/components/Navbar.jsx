@@ -9,55 +9,24 @@ import { userLogin } from '../repository/productRepository';
 const Navbar = () => {
     return (
         <>
-            <div className="container p-3  " style={{ position: "relative", borderRadius: "7px" }}>
-                <nav className="navbar  navbar-expand-lg bg-light shadow-lg py-3 sticky-top" style={{ borderRadius: "7px" }}>
-                    <div className="container-fluid">
+            <div className="container-fluid shadow-none">
+                <nav className="navbar  navbar-expand-lg py-3 sticky-top shadow-none p-3">
+                    <div className="container-fluid sticky-top">
                         <Link to="/" className="navbar-brand" > <img src={logo} alt="" height={45} /> </Link>
                         <Button classNameName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             {/* <span className="navbar-toggler-icon"></span> */}
                         </Button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
-
-                                {/* <li className="nav-item dropdown">
-                                    <a className="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Houses
-                                    </a>
-                                    <ul className="dropdown-menu border-0 shadow p-2">
-                                        <li><Link className="dropdown-item" to="/">One Room Set</Link></li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">Two Rooms Set</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-
-                                        <li><a className="dropdown-item" href="#">Three Rooms Set</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-
-                                        <li><a className="dropdown-item" href="#">Four Rooms Set</a></li>
-
-
-                                    </ul>
+                            <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                                <li className='nav-item'>
+                                    <Link className='nav-link' to="/">Home</Link>
                                 </li>
-                                <li className="nav-item dropdown ms-2">
-                                    <a className="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Flats
-                                    </a>
-                                    <ul className="dropdown-menu border-0 shadow p-2">
-                                        <li><Link className="dropdown-item" to="/">1 BHK Flats</Link></li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">2 BHK Flats</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-
-                                        <li><a className="dropdown-item" href="#">3 BHK Flats</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-
-                                        <li><a className="dropdown-item" href="#">4 BHK Flats</a></li>
-
-
-                                    </ul>
-                                </li> */}
+                                <li className='nav-item'>
+                                    <Link className='nav-link' to="/">About Us</Link>
+                                </li>
+                                <li className='nav-item'>
+                                    <Link className='nav-link' to="/">Contact</Link>
+                                </li>
 
                             </ul>
 
@@ -79,7 +48,7 @@ const Navbar = () => {
 
 
                                     <Link to="/login" className='text-decoration-none'>
-                                        <Button variant='contained' size='large' style={{ backgroundColor: "#f1592a" }}>Login</Button>
+                                        <Button variant='contained' size='large' style={{ backgroundColor: "#ffa458", borderRadius: "0px" }}>Login</Button>
                                     </Link>
                                 </div>
                             }
