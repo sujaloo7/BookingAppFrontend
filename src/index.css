@@ -24,3 +24,24 @@
 /* ::placeholder {
   color: black !important;
 } */
+.searchForm {
+  background-color: rgb(255, 255, 255);
+  /* backdrop-filter: blur(10px); */
+}
+
+label {
+  color: coral;
+}
+
+.col-sm-3 .card {
+  transition: .3s;
+  border-radius: 10px !important;
+}
+
+.col-sm-3 .card:hover {
+  box-shadow: 0px 10px 19px 9px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+  font-size: small !important;
+}

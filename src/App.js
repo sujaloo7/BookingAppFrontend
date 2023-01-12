@@ -7,14 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Mumbai from './Hotels/Mumbai';
-import Details from './pages/Details';
-import Profile from './pages/Profile';
-import Properties from './pages/Properties';
-import Changenumber from './pages/Changenumber';
-import Response from './pages/Response';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
+import Properties from './components/Properties';
 
 // import { Authcontextprovider } from './context/Authcontext';
 
@@ -40,12 +35,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/signup' element={<Signup />} />
-            {/* <Route path='/mumbai' element={<Mumbai />} />
-          <Route path='/details' element={<Details />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/properties' element={<Properties />} />
-          <Route path='/changenumber' element={<Changenumber />} />
-          <Route path='/response' element={<Response />} /> */}
+            <Route path='/properties' element={<Properties/>}/>
 
 
 

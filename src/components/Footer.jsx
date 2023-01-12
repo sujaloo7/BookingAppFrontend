@@ -69,13 +69,9 @@ const Footer = () => {
                                                 <li><a href="#">Home</a></li>
                                                 <li><a href="#">about</a></li>
                                                 <li><a href="#">services</a></li>
-                                                <li><a href="#">portfolio</a></li>
-                                                <li><a href="#">Contact</a></li>
-                                                <li><a href="#">About us</a></li>
                                                 <li><a href="#">Our Services</a></li>
                                                 <li><a href="#">Expert Team</a></li>
                                                 <li><a href="#">Contact us</a></li>
-                                                <li><a href="#">Latest News</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -105,7 +101,7 @@ const Footer = () => {
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                                         <div class="copyright-text">
-                                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://github.com/sujaloo7">Sujal</a></p>
+                                            <p>Copyright &copy; 2018, All Right Reserved <a href="/">VRH PROPERTIES</a></p>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">

@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from './Footer'
+import Navbar from './Navbar'
+import { HStack, Input, Select } from '@chakra-ui/react';
 
-const Trending = () => {
+const Properties = () => {
     useEffect(() => {
         AOS.init({
             duration: 500,
@@ -11,12 +14,20 @@ const Trending = () => {
     }, []);
     return (
         <>
-
+            <Navbar />
             <div className="container mb-5 pt-5" data-aos="fade-up">
-                <h4 className='text-center fs-4'><span className='' style={{ fontSize: "14px", color: "#ffa458" }}> PROPERTIES NEAR YOU</span><br></br>Handpicked Exclusive Properties By Our Team.</h4>
-                <p className='text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
                 <div className="row mt-4 p-3">
-
+                    <div className="col-sm-12 mb-3 py-2">
+                        <HStack>
+                            <div className="col-sm-2"><Input type={"search"} placeholder={"Sort by content"} /></div>
+                            <div className="col-sm-2 ms-auto">
+                                <Select className=' ' placeholder='Select option'>
+                                    <option value='option1'>Option 1</option>
+                                    <option value='option2'>Option 2</option>
+                                    <option value='option3'>Option 3</option>
+                                </Select>
+                            </div></HStack>
+                    </div>
 
                     <div className="col-sm-3 mb-4 ">
                         <div className="card border-0">
@@ -144,8 +155,9 @@ const Trending = () => {
 
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
 
-export default Trending
+export default Properties
