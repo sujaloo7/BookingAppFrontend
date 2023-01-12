@@ -2,7 +2,6 @@ import React from 'react';
 import "./footer.css";
 import logo from "../images/logo.png";
 import { Link } from 'react-router-dom';
-import { TextField } from '@mui/material';
 
 
 const Footer = () => {
@@ -19,7 +18,7 @@ const Footer = () => {
                                             <i class="fas fa-map-marker-alt"></i>
                                             <div class="cta-text">
                                                 <h4>Find us</h4>
-                                                <span>1010 Avenue, sw 54321, Jaipur</span>
+                                                <span>Maharani Apartment, B-208, B-6,<br></br> Rajendra Marg, Bapu Nagar, <br></br>Jaipur, Rajasthan 302015</span>
                                             </div>
                                         </div>
                                     </div>
@@ -37,7 +36,7 @@ const Footer = () => {
                                             <i class="fa fa-envelope"></i>
                                             <div class="cta-text">
                                                 <h4>Mail us</h4>
-                                                <span>mail@info.com</span>
+                                                <span>info@revolutionsoft.in</span>
                                             </div>
                                         </div>
                                     </div>
@@ -48,11 +47,10 @@ const Footer = () => {
                                     <div class="col-xl-4 col-lg-4 mb-50">
                                         <div class="footer-widget">
                                             <div class="footer-logo">
-                                                <Link to="/"><img src={logo} class="img-fluid" alt="logo" /></Link>
+                                                <Link to="/"><img src={logo} class="img-fluid" alt="logo" height={65} /></Link>
                                             </div>
                                             <div class="footer-text">
-                                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                                    elit,Lorem ipsum dolor sit amet.</p>
+                                                <p>We Will Assist You In The Best And Comfortable Property Services For You.</p>
                                             </div>
                                             <div class="footer-social-icon">
                                                 <span>Follow us</span>
@@ -92,7 +90,7 @@ const Footer = () => {
                                             <div class="subscribe-form">
                                                 <form action="#">
 
-                                                    <TextField id="outlined-basic" type="email" className='mt-3 w-100' label="Subscribe" variant="outlined" />
+                                                    <input id="outlined-basic" type="email" className='mt-3 w-100' label="Subscribe" />
 
                                                     <button className='mt-3'><i class="fab fa-telegram-plane"></i></button>
                                                 </form>

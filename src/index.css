@@ -20,3 +20,7 @@
 .card:hover>.inner {
   display: block !important;
 }
+
+/* ::placeholder {
+  color: black !important;
+} */

@@ -1,16 +1,16 @@
 import React from 'react';
-import TextField from '@mui/material/TextField';
-import { Button } from '@mui/material';
-import Divider from '@mui/material/Divider';
-import Chip from '@mui/material/Chip';
+// import TextField from '@mui/material/TextField';
+// import { Button } from '@mui/material';
+// import Divider from '@mui/material/Divider';
+// import Chip from '@mui/material/Chip';
 import { AiOutlineUserAdd } from "react-icons/ai";
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 import { Link } from 'react-router-dom';
-import { BiLock } from "react-icons/bi";
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import InputLabel from '@mui/material/InputLabel';
+// import { BiLock } from "react-icons/bi";
+// import MenuItem from '@mui/material/MenuItem';
+// import FormControl from '@mui/material/FormControl';
+// import Select from '@mui/material/Select';
+// import InputLabel from '@mui/material/InputLabel';
 import { useState, useEffect } from 'react';
 import { userRegister, getRoles } from '../repository/productRepository';
 
@@ -67,7 +67,7 @@ const Signup = () => {
             <h5 className='mt-3 text-bold'>Hey, sign Up Here!!!</h5>
 
             <form onSubmit={submitUser} className='col-sm-12'>
-              <TextField
+              <input
                 id="outlined-textarea"
                 label="Name"
                 placeholder="Enter Your Name"
@@ -81,7 +81,7 @@ const Signup = () => {
                 style={{ width: "70%" }}
 
               />
-              <TextField
+              <input
                 id="outlined-textarea"
                 label="Email"
                 placeholder="Enter Your Email"
@@ -93,7 +93,7 @@ const Signup = () => {
                 style={{ width: "70%" }}
 
               />
-              <FormControl style={{ width: "70%" }} className="mt-2 mb-2">
+              {/* <FormControl style={{ width: "70%" }} className="mt-2 mb-2">
                 <InputLabel id="demo-simple-select-label">I'm a</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
@@ -103,14 +103,14 @@ const Signup = () => {
                   required
                   onChange={getValue}
                 >
-                 
-                       <MenuItem  value="User">User </MenuItem>
-                       <MenuItem  value="User">Owner </MenuItem>
+
+                  <MenuItem value="User">User </MenuItem>
+                  <MenuItem value="User">Owner </MenuItem>
 
 
                 </Select>
-              </FormControl>
-              <TextField
+              </FormControl> */}
+              <input
                 id="outlined-password-input"
                 label="Phone Number"
                 type="number"
@@ -121,7 +121,7 @@ const Signup = () => {
                 className='mt-2 mb-4'
                 style={{ width: "70%" }}
               />
-              <TextField
+              <input
                 id="outlined-password-input"
                 label="Password"
                 type="password"

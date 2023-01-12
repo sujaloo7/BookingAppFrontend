@@ -2,12 +2,8 @@ import React from 'react';
 import { BiLock } from "react-icons/bi";
 import { Link, useNavigate } from 'react-router-dom';
 import "./login.css";
-import TextField from '@mui/material/TextField';
-import { Button } from '@mui/material';
-import Divider from '@mui/material/Divider';
-import Chip from '@mui/material/Chip';
+
 import { FcGoogle } from "react-icons/fc";
-import Tooltip from '@mui/material/Tooltip';
 import { UserAuth } from '../context/Authcontext';
 import { BsArrowLeft } from "react-icons/bs";
 // import { async } from '@firebase/util';
@@ -23,28 +19,7 @@ const Login = () => {
     const navigate = useNavigate()
 
 
-    const loginUser = async (e) => {
-        e.preventDefault()
-        setError('')
-        try {
-            await userLogin({ email: email, password: password })
-            navigate('/profile')
-        }
-        catch (error) {
-            console.log(error)
-            setError(error.message)
-        }
-    }
-    // const googleSignIn = UserAuth();
 
-    // const handleGoogleSignIn = async () => {
-    //     try {
-    //         await googleSignIn();
-    //     }
-    //     catch (error) {
-    //         console.log(error);
-    //     }
-    // };
     return (
         <>
             <div className="container text-center">
@@ -56,7 +31,7 @@ const Login = () => {
                         <h5 className='mt-3 text-bold'>Hey, welcome back !!!</h5>
 
                         <form className='col-sm-12' onSubmit={loginUser}>
-                            <TextField
+                            <input
                                 id="outlined-textarea"
                                 label="Email"
                                 placeholder="Enter Your Email"
@@ -67,7 +42,7 @@ const Login = () => {
                                 onChange={e => setEmail(e.target.value)}
 
                             />
-                            <TextField
+                            <input
                                 id="outlined-password-input"
                                 label="Password"
                                 type="password"
@@ -89,9 +64,9 @@ const Login = () => {
 
 
                             </div>
-                            <Divider className='mt-4'>
+                            {/* <Divider className='mt-4'>
                                 <Chip label="OR" />
-                            </Divider>
+                            </Divider> */}
                             {/* <Tooltip title="Login With Google" placement="bottom-end">
 
 

@@ -1,129 +1,41 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import { BsFillStarFill } from "react-icons/bs";
+import React from 'react'
 
-export default function ActionAreaCard() {
+const Trending = () => {
     return (
+        <>
+
+            <div className="container mb-5 pt-5">
+                <h4 className='text-center fs-4'><span className='' style={{ fontSize: "14px", color: "#ffa458" }}> PROPERTIES NEAR YOU</span><br></br>Budget to luxury, we’ve got you Properties</h4>
+                <p className='text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
+                <div className="row mt-4 p-3">
 
 
+                    <div className="col-sm-3 mb-4 ">
+                        <div className="card border-0">
+                            <img src="https://rentproperties.in/images/property/1672742469_d48bda8575f72c15841c.jpg" alt="" style={{ height: "200px" }} />
+                        </div>
+                    </div>
+                    <div className="col-sm-3 mb-4 ">
+                        <div className="card border-0">
+                            <img src="https://www.godrejsplendour.org.in/project/advantages-of-buying-a-property-during-its-new-launch.webp" alt="" style={{ height: "200px" }} />
+                        </div>
+                    </div>
+                    <div className="col-sm-3 mb-4 ">
+                        <div className="card border-0">
+                            <img src="https://www.zricks.com/ImagesPostProject/13817//357eeac3-834a-48ef-8ea6-73cf5d965f8f.jpg" alt="" style={{ height: "200px" }} />
+                        </div>
+                    </div>
+                    <div className="col-sm-3 mb-4 ">
+                        <div className="card border-0">
+                            <img src="https://images.prismic.io/bramhacorp/cdac64ea-d369-4931-8590-eef887753b0a_TC_Project%20Main%20Page%20-%20Desktop.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max" alt="" style={{ height: "200px" }} />
+                        </div>
+                    </div>
 
-        <div className="container mb-5 pt-5">
-            <h4 className='text-center'><span className='' style={{ fontSize: "14px", color: "#ffa458" }}> PROPERTIES NEAR YOU</span><br></br>Budget to luxury, we’ve got you Properties</h4>
-            <p className='text-center' style={{ fontWeight: "900", color: "#557cef" }}>_______________</p>
-            <div className="row mt-4 p-3">
-                <div className="col-sm-4">
 
-                    <Card className='pt-2 border-0 shadow'>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
-                                alt="green iguana"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Park Kolkata</div>
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
-                                    <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
-                                    </div>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
                 </div>
-                <div className="col-sm-4">
-
-                    <Card className='pt-2 border-0 shadow'>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
-                                alt="green iguana"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Park Kolkata</div>
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
-                                    <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
-                                    </div>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </div>
-                <div className="col-sm-4">
-
-                    <Card className='pt-2 border-0 shadow'>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
-                                alt="green iguana"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Park Kolkata</div>
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
-                                    <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
-                                    </div>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </div>
-                <div className="col-sm-4 mt-3">
-
-                    <Card className='pt-2 border-0 shadow'>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://d1ha4q9jvugw4k.cloudfront.net/static/img/park-kolkata.png"
-                                alt="green iguana"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h6" component="div">
-                                    <div className='d-flex'>  Park Kolkata</div>
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica<br></br> */}
-                                    <p style={{ color: "#f1592a" }}> Park Street, Kolkata</p>
-                                    <div className='d-flex'>
-                                        <h6 style={{ color: "#557cef" }}>₹3540</h6><h6 className='ms-auto' style={{ color: "#f1592a" }}></h6>
-                                    </div>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </div>
-
-
             </div>
-        </div>
-
-
-    );
+        </>
+    )
 }
+
+export default Trending

@@ -30,9 +30,17 @@ body {
 
 .nav-link {
     font-size: large;
-    color: rgb(255, 255, 255);
+    color: rgb(85, 78, 78);
 }
 
 .nav-link:hover {
     color: #ffa458;
+}
+
+.header-bg {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    height: 70px;
 }
